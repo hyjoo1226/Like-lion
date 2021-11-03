@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가변 크기 단위</title>
+    <style>
+        html, body {
+            font-size: 10px;
+        }
+        /* em을 사용하면 일일이 고치지 않더라도 부모요소의 사이즈만 바꾸면 한번에 수정 가능*/
+        p {
+            font-size: 2em;
+            font-weight: 900;
+        }
+        div {
+            font-size: 3em;
+        }
+        .one {
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>hello world</h1>
+    <p>hello world</p>
+    <!-- em, %, rem, vw, vh -->
+    <div>
+        <!-- body * 3 = 30px -->
+        <div>
+            <!-- * 3 = 90px -->
+            <div>
+                <!-- * 3 = 270px -->
+                hello world
+            </div>
+        </div>
+    </div>
+    <div>
+        <div>
+            <!-- rem은 최상위 요소만 고려 -->
+            <div class="one">
+                hello world
+            </div>
+        </div>
+    </div>
+</body>
+</html>

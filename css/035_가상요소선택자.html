@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상요소선택자</title>
+    <style>
+        /* p태그 뒤에 가상의 요소 추가, 화면에서는 선택 안됨(개발자도구에서 가능) 
+        장식적인 요소를 html 태그 없이 구현하고 싶을때 주로 사용*/
+        p::after {
+            content: 'cm'
+        }
+        /* p태그 앞에 가상의 요소 추가 */
+        p::before {
+            content: '!!'
+        } 
+    </style>
+</head>
+<body>
+    <p>10</p>
+</body>
+</html>

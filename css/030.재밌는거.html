@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>재밌는거</title>
+    <style>
+        div {
+            width: 500px;
+            height: 500px;
+            background: brown;
+            /* 부드러운 전환효과 */
+            transition: all .5s; 
+        }
+        /* div 요소에 마우스가 들어가면 적용시키겠다 */
+        div:hover {
+            width: 600px;
+            height: 600px;
+            background: burlywood;
+            /* 모서리 깎기 */
+            border-radius: 100px;
+            /* 2d 애니메이션 효과 */
+            transform: translateX(100px) translateY(30px) rotate(720deg);
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
