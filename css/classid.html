@@ -1,0 +1,23 @@
+<head>
+    <style>
+            .class_one {
+                color: aqua;
+            }
+            .class_two {
+                font-size: 48px;
+            }
+            #id_one {
+                color: aqua;
+            }
+            #id_two {
+                font-size: 48px;
+            }
+    </style>
+</head>
+<body>
+    <p>hello world 1</p>
+    <p class="class_one">hello world 2</p>
+    <p class="class_one class_two">hello world 3</p>  <!-- 둘 다 적용 -->
+    <p id="id_one">hello world 4</p>
+    <p id="id_one id_two">hello world 5</p>           <!-- 적용 x -->
+</body>

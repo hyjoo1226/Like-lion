@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>뱁새</title>
+    <style>
+        body {
+            background-color: bisque;
+        }
+        .bird_face {
+            position: absolute;
+            left: 300px;
+            top: 150px;
+            height: 270px;
+            width: 300px;
+            border: 1px solid #e0e0ec;
+            border-radius: 50%;
+            background: #FDFDFD;
+        }
+        .left_eye {
+            height: 40px;
+            width: 45px;
+            position: absolute;
+            left: 60px;
+            top: 100px;
+            border: 3px solid #79695a;
+            background: black;
+            border-radius: 50%;
+        }
+        .right_eye {
+            height: 40px;
+            width: 45px;
+            position: absolute;
+            left: 185px;
+            top: 100px;
+            border: 3px solid #79695a;
+            background: black;
+            border-radius: 50%;
+        }
+        .eye_point1 {
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            height: 5px;
+            width: 7px;
+            position: absolute;
+            background: white;
+            border-radius: 50%;
+        }
+        .eye_point2 {
+            position: absolute;
+            left: 25px;
+            top: 25px;
+            height: 5px;
+            width: 7px;
+            position: absolute;
+            background: white;
+            border-radius: 50%;
+        }
+        .bird_beak {
+            height: 40px;
+            width: 40px;
+            position: absolute;
+            left: 125px;
+            top: 150px;
+            border: 5px solid #79695a;
+            background: #79695a;
+            border-radius: 20%;
+            transform: rotate(45deg);
+        }
+        .beak_point {
+            height: 40px;
+            width: 40px;
+            border-top: 5px solid #342626;
+            border-right: 5px solid #342626;
+            border-radius: 20%;
+            transform: rotate(90deg);
+        }
+        .bird_body {
+            position: absolute;
+            left: -70px;
+            top: 150px;
+            height: 350px;
+            width: 450px;
+            border: 1px solid #e0e0ec;
+            border-radius: 50%;
+            background: #FDFDFD;
+            z-index: -1;
+        }
+        .left_wing {
+            position: absolute;
+            left: -125px;
+            top: 20px;           
+            width: 300px;
+            height: 150px;
+            border: 1px solid #e0e0ec;
+            border-radius: 40%;
+            background: #FDFDFD;
+            transform: rotate(60deg);
+            z-index: -2;
+        }
+        .right_wing {
+            position: absolute;
+            left: 260px;
+            top: 20px;           
+            width: 300px;
+            height: 150px;
+            border: 1px solid #e0e0ec;
+            border-radius: 40%;
+            background: #FDFDFD;
+            transform: rotate(-240deg);
+        }
+        .left_leg {
+            position: absolute;
+            left: 125px;
+            top: 300px;  
+            height: 80px;
+            border-left: 10px solid #79695a;
+            border-radius: 25%;
+        }
+        .right_leg {
+            position: absolute;
+            left: 300px;
+            top: 300px;  
+            height: 80px;
+            border-left: 10px solid #79695a;
+            border-radius: 25%;
+        }
+        .leg_point {
+            position: absolute;
+            left: -20px;
+            top: 50px;  
+            height: 20px;
+            width: 20px;
+            border: 5px solid #79695a;
+            background: #79695a;
+            border-radius: 20%;
+            transform: rotate(45deg);
+        }
+        </style>
+</head>
+<body>
+        <div class="bird_face">
+            <div class="left_eye">
+                <div class="eye_point1"></div>
+                <div class="eye_point2"></div>
+            </div>
+            <div class="right_eye">
+                <div class="eye_point1"></div>
+                <div class="eye_point2"></div>
+            </div>
+            <div class="bird_beak">
+                <div class="beak_point"></div>
+            </div>
+            <div class="bird_body">
+                <div class="left_wing"></div>
+                <div class="right_wing"></div>
+                <div class="left_leg">
+                    <div class="leg_point"></div>
+                </div>
+                <div class="right_leg">
+                    <div class="leg_point"></div>
+                </div>
+            </div>
+        </div> 
+</body>
+</html>

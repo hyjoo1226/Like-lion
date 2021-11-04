@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마진 겹침 현상</title>
+    <!-- 해결법
+        1. 부모 요소에 overflow 속성 값을 적용해줍니다.
+        2. 부모 요소에 display: inline-block 값을 적용해줍니다.
+        3. 부모 요소에 border 값을 적용해줍니다. -->
+    <style>
+        div {
+            width:100px;
+            height:100px;
+            border:1px solid black;
+        }
+
+        .parent {
+            background-color:yellow;
+        }
+        .child {
+            width:100px;
+            height:100px;
+            /* margin-top이 없으면 겹쳐짐 */
+            margin-top:50px;
+            background-color:red;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <!-- child 는 parent의 border 안쪽부터 위치하기에 1px 위치 차이가 나는것 -->
+        <div class="child"></div>
+    </div>
+</body>
+</html>

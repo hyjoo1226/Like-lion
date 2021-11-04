@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>color</title>
+    <style>
+        .one {
+            width: 200px;
+            height: 100px;
+            /* color name */
+            background: red;
+        }
+        .two {
+            width: 200px;
+            height: 100px;
+            /* color hex code(16진수) */
+            background: #999999;
+        }
+        .three {
+            width: 200px;
+            height: 100px;
+            /* 각 자리의 수가 같으면 하나로 생략 가능) */
+            background: #333;   /* 333333 */
+        }
+        .four {
+            width: 200px;
+            height: 100px;
+            /* rgba(red, green, blue, 투명도) */
+            background: rgba(255, 0, 0, 0.1)
+        }
+        </style>
+</head>
+<body>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+    <div class="four"></div>
+</body>
+</html>

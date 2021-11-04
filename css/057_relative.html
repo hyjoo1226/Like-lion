@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>relative. 상대적인 속성</title>
+    <style>
+        .box1{
+            /* static: 위에서 아래로 순서대로 쌓임 */
+            position: static;
+            background-color: green;
+            color:white;
+            width: 100px;
+            height: 100px;
+        }
+        .기준 {
+            /* relative: static로부터의 상대적인 위치 */
+            position: relative;
+        }
+        .box2{
+            /* absolute의 기준이 되는 것은 relative고,   
+            relative가 없다면 전체 body가 기준이다.
+            position: relative는 position: absolute의 기준점 */
+            position: absolute;
+            left: 40px;
+            top: 30px;
+            background-color: red;
+            color:white;
+            width: 100px;
+            height: 100px;
+        }
+        .box3{
+            position: absolute;
+            left: 100px;
+            top: 100px;
+            background-color: aqua;
+            color:white;
+            width: 100px;
+            height: 100px;
+            /*
+            z-index 값을 주면 큰 값을 가진 박스가 앞을 차지. 
+            기본값은 부모의position(body의 경우 0)
+            */
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">box1</div>
+
+    <div class="기준">
+        <div class="box2">box2</div>
+        <div class="box3">box3</div>
+    </div>    
+</body>
+</html>
