@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-size: 0;
+        }
+        div {
+            display: inline-block;
+            background: pink;
+            width: 100px;
+            height: 100px;
+            /* margin: 20px; */
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <!-- div는 블록요소로 한 줄을 차지 
+        -> inline-block을 적용하면 컨텐츠만큼만 차지, 추가 수정 가능
+           inline으로 적용하면 추가 수정이 불가
+           요소들 사이에 margin이 없어도 공백이 생기는 문제 발생 
+            ->부모에게 font-size:0 을 주면 해결가능하나 귀찮음      -->
+    <div>안녕하세요</div>
+    <div>안녕하세요</div>
+    <div>안녕하세요</div>
+</body>
+</html>

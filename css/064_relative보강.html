@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background: pink;
+        }
+        .second {
+             /* relative는 static 기준이고, absolute는 가장 가까운 relative/absolute/fixed를 가진 부모 기준 */
+             /* relative는 normal flow대로 흐르지만, absolute를 사용하면 normal flow에서 벗어나 겹쳐짐 */
+             /* 팝업창이나 퀵메뉴 등에 position 속성 사용 */
+            position: relative;
+            top: 250px;
+            background: black;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div class="second"></div>
+    <div></div>
+</body>
+</html>

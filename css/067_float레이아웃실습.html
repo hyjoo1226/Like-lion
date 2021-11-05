@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float실습</title>
+    <style>
+        ul {
+            list-style: none;
+        }
+        /* 부모요소에는 높이값 지정 x, 자식요소들이 영향받을 수 있으므로 */
+        /* nth-child를 쓸 때는 형제요소 수와 같아야함
+        현업에서는 클래스를 대신 쓴다 */
+        li:nth-child(1) {
+            width: 300px;
+            height: 100px;
+            background: blue;
+        }
+        li:nth-child(2) {
+            float: left;
+            width: 100px;
+            height: 100px;
+            background: green;
+        }
+        li:nth-child(3) {
+            float: left;
+            width: 100px;
+            height: 100px;
+            background: red;
+        }
+        li:nth-child(4) {
+            float: left;
+            width: 100px;
+            height: 100px;
+            background: purple;
+        }
+        li:nth-child(5) {
+            clear: left;
+            width: 300px;
+            height: 100px;
+            background: yellow;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!-- float: 부모가 float된 자식요소를 알아보지 못하게 함 -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float</title>
+    <!-- float 해제하는 여러가지 방법들 -->
+    <style>
+        ul {
+        /* 1.overflow는 자식들이 모두 float된 상태일 때 사용
+        부모가 float된 자식의 존재를 알기 위해 사용하는 것 */
+            overflow: hidden;
+
+        /* 2.부모요소에 display: inline-block; 
+        overflow를 쓰기가 부담스럽다 하는 경우*/
+        }
+        /* 3. clear-fix. 부모요소 아래 after 가상요소(가장 마지막 자식요소) 만들기(before는 가장 첫번째)
+        불필요한 요소는 최대한 사용하지 않는게 html에 깔끔하므로 가상요소 쓴것
+        ul::after {
+            display: block;
+            content: '';
+            clear: both;
+        } */
+        li {
+            height: 100px;
+            background: pink;
+        }
+        li:nth-child(2) {
+            /* float이후 넓이값을 따로 줘야함 */
+            float: left;
+            width: 100%;
+            background: blue;
+        }
+        li:nth-child(3) {
+        /* 4.normal flow로 다시 돌아가고 싶다면 마지막 요소에 clear 속성 적용
+        마지막 요소에게 너의 float된 형제요소가 left에 있다고 알려줌*/
+            clear: left;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</body>
+</html>
