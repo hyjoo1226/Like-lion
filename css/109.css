@@ -1,0 +1,192 @@
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    src: url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2") format('woff2'),
+    url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff") format('woff'),
+    url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf") format('opentype');
+}
+
+#app {
+    font-family: GmarketSansMedium;
+    background-color: #5b2386;
+    color: white;
+    text-align: center;
+    }
+
+img{
+    display: block;
+    width:100%;
+}
+
+.tit-law{
+    /* 마진겹침현상을 해결하기 위해 */
+    display: inline-block;
+    position: relative;
+    /* 간격을 줄 떄는 가장 바깥의 부모에게 간격을 주자 */
+    margin-top: 194px;
+}
+
+.tit-law .img-tit {
+    /* z-index값은 position값이 있어야만 적용되므로
+    relative는 normal flow를 따르므로 다른 문제 일으키지 않음 */
+    position: relative;
+    /* z-index값 10: 계산하기 편함. 나중에 세부 조욜 대비 */
+    z-index: 10;
+}
+
+/* 가상요소엔 display와 content 필수*/
+.tit-law::After{
+    display: block;
+    content: '';
+    position: absolute;
+    /* 중앙정렬을 위해. 50%부터 자식요소의 좌측상단이 부모요소의 중앙으로 */
+    top: 50%;
+    left: 50%;
+    width: 225px;
+    height: 225px;
+    /* 픽셀 소수점자리는 사용 잘 안함 */
+    margin: -112px 0 0 -112px;
+    background-image: url(10000hours/img/clock.png);
+    /* img가 content넓이보다 크므로 */
+    background-size: 225px;
+}
+
+.img-txt {
+    /* 이미지의 넓이값은 하나만 주면 자동 결정 */
+    max-width: 486px;
+    /* margin: 0 auto 중앙정렬 */
+    margin: 125px auto 78px;
+}
+
+.txt-desc {
+    position: relative;
+    width: 475px;
+    margin: 0 auto 120px;
+    line-height: 24px;
+    font-size: 18px;
+}
+
+.txt-desc .tit-desc {
+    font-size: 24px;
+    font-weight: bold;
+}
+.txt-desc::before, .txt-desc::after {
+    position: absolute;
+    top: 50%;
+    display: block;
+    content: '';
+    width: 37px;
+    height: 32px;
+    margin-top: -16px;
+}
+
+.txt-desc::before {
+    left: 0;
+    background-image: url(10000hours/img/txt-left.png);
+}
+
+.txt-desc::after {
+    right: 0;
+    background-image: url(10000hours/img/txt-right.png);
+}
+
+.cont-inp, .cont-result {
+    font-size: 24px;
+    line-height: 24px;
+}
+.cont-inp .txt-wannabe {
+    margin-bottom: 27px;
+}
+
+.cont-inp .txt-time {
+    margin-bottom: 115px;
+}
+
+.cont-inp .txt-wannabe input, .cont-inp .txt-time input {
+    width: 228px;
+    height: 57px;
+    border: none;
+    border-radius: 7px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.cont-inp .btn-exc, .btn-go, .btn-share {
+    padding: 21px 49px;
+    margin-bottom: 147px;
+    font-family: 'GmarketSansBold';
+    font-size: 24px;
+    line-height: 24px;
+    color: #5b2386;
+    background-color: #fcee21;
+    border-radius: 56px;
+    cursor: pointer;
+    border: none;
+}
+
+.cont-inp .btn-exc::after {
+    display: black;
+    content: '';
+    width: 64px;
+    height: 72px;
+    
+}
+
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+.cont-result .txt-wannabe, .cont-result .txt-time {
+    line-height: 72px;
+}
+
+.cont-result .txt-wannabe {
+    margin-bottom: 17px;
+}
+
+.cont-result .txt-time {
+    margin-bottom: 127px;
+}
+/* 요소선택자로 쓰는것보다 클래스가 안전하다 */
+.cont-result .txt-wannabe strong, .cont-result .txt-time strong {
+    font-size: 72px;
+    vertical-align: top;
+    font-family: 'GmarketSansBold';
+}
+
+.btn-share {
+    margin-left: 18px;
+    background-color: white;
+}
+
+.cont-footer {
+    font-family: 'Noto Sans KR';
+    font-size: 12px;
+    line-height: 17px;
+}
+
+.cont-footer .img-footer {
+    width: 125px;
+    height: 25px;
+    margin: 0 auto 20px;
+}

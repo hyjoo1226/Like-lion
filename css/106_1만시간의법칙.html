@@ -1,3 +1,4 @@
+<!-- https://github.com/dreamfulbud/HTML-CSS/tree/main/P_05 혜진님 코드 -->
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -8,11 +9,18 @@
     <link rel="stylesheet" href="10000hours/css/reset.css">
     <link rel="stylesheet" href="10000hours/css/10000hours.css">
     <style>
+        html, body {
+            width: 100%;
+            height: 100%;
+        }
         body {
-            background: #5B2386;
+            font-family: 'GmarketSansMedium';
+            background-color: #5b2386;
             color: white;
             font-size: 17px;
-            font-family: 'GmarketSansMedium';
+            }
+        img {
+            width: 100%;
         }
         h2 {
             color: #f5df4d;
@@ -38,9 +46,12 @@
 </head>
 <body>
     <header>
+        <!-- 이미지 텍스트는 alt 직접 읽어주게 -->
         <img src="10000hours/img/title.png" alt="1만시간의법칙">
         <div class="clock">
-            <img src="10000hours/img/clock.png" alt="시계사진">
+            <!-- 단순 배경은 딱히 alt 없어도 될 듯 
+            이런 요소들은 가상요소로 만드는 것 좋음-->
+            <img src="10000hours/img/clock.png" alt="">
         </div>
     </header>
     <section>
@@ -64,7 +75,8 @@
             <p>나는 며칠 동안 훈련을 해야</p>
             <p>1만 시간이 될까?</p>
         </button>
-        <img src="10000hours/img/click.png" alt="클릭하는모양">
+        <!-- 단순 장식이미지. alt 없어도 될 듯 -->
+        <img src="10000hours/img/click.png" alt="">
     </section>
     <footer>
         <img src="10000hours/img/logo.png" alt="위니브로고">
@@ -73,4 +85,3 @@
     </footer>
 </body>
 </html>
-

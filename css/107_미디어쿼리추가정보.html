@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미디어쿼리추가정보 </title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        /* 인쇄미리보기 화면에서 보임 */
+        @media print {
+            abbr::after {
+                /* attr() : css 속성 함수) */
+                /* body의 title값이 인자가 되어 content에 들어감 */
+                content: ' ('attr(title)')'
+            }
+        }
+        
+        /* pixel-ratio: 1px 안에 들어가는 디바이스의 스크린 픽셀의 숫자. 
+        1920x1080이면 1px에 화소가 1개*/
+        div {
+            margin: 50px;
+            width: 1px;
+            height: 1px;
+            background: black;
+        }
+        /* 해상도에 따른 이미지 교체를 위해. 레티나에서 이미지는 작아서 늘리면 흐려지기 떄문에.*/
+        @media screen and (-webkit-devicd-pixel-radio: 2) {
+            body {
+                background:royalblue;
+            }
+        }
+        </style>
+</head>
+<body>
+    <abbr title="world wide web consortium">w3c</abbr>
+    <div></div>
+</body>
+</html>
