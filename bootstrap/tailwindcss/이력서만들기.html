@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이력서만들기</title>
+    <link href="https://unpkg.com/tailwindcss@%5E2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+    <style>
+        .font-noto {
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+    </style>
+</head>
+<body class="font-noto bg-yellow-50">
+    <header class="inline-flex">
+        <img class="w-3/12" src="캐릭터 만들기_뱁새.png" alt="이력서 사진">
+        <div class="m-5">
+            <h1 class="font-extrabold text-3xl">주현호</h1>
+            <h2>Front-end engineer</h2>
+            <footer class="text-xs mt-16">
+                <p>sparrow9576@gmail.com</p>
+                <p>https://github.com/hyjoo1226</p>
+            </footer>
+        </div>
+    </header>
+    <main class="grid grid-cols-3 border border-yellow-200">
+        <section class="row-start-1 row-end-3 m-4">
+            <h3 class="font-bold text-2xl mb-4">Skills</h3>
+            <dd>HTML</dd>
+            <dt class="mb-4">30%</dt>
+            <dd>CSS</dd>
+            <dt class="mb-4">30%</dt>
+            <dd>Java Script</dd>
+            <dt>40%</dt>
+        </section>
+        <section class="col-start-2 col-end-4 border border-yellow-200">
+            <h3 class="font-bold text-2xl mt-4 mb-4">Profile</h3>
+            <p class="mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis molestiae exercitationem unde quam sint nobis eum repudiandae eos odio eveniet, aspernatur culpa porro ipsam, eaque, quod dolorum nulla blanditiis? Cum?
+            Cumque, odio eaque aliquam laboriosam, dignissimos illo laudantium quod eos qui in temporibus mollitia nisi similique eligendi quia sequi consectetur et cupiditate quos, dolor alias! Debitis, tempora voluptatem! Rem, earum?</p>
+        </section>
+        <section class="col-start-2 col-end-4 border border-yellow-200">
+            <h3 class="font-bold text-2xl mt-4 mb-4">Project</h3>
+            <ul>
+                <li>1만 시간의 법칙 - 1day</li>
+                <li>벤딩머신 - 2day</li>
+                <li>렌딩페이지 - 3day</li>
+                <li class="mb-4">감귤마켓 - 7day</li>
+            </ul>
+        </section>
+        <section class="col-start-2 col-end-4 border border-yellow-200">
+            <h3 class="font-bold text-2xl mt-4 mb-4">Education</h3>
+            <dd><strong>광운대학교 산업심리학과</strong></dd>
+            <dt class="mb-4">2016.02 - 2021.03</dt>
+            <dd><strong>멋쟁이사자처럼 프론트엔드스쿨</strong></dd>
+            <dt class="mb-4">2021.10 - 2022.01</dt>
+        </section>
+    </main>
+</body>
+</html>
