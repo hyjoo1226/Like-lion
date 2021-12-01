@@ -18,14 +18,15 @@ console.log(sum / arr.length);
 //2번 string의 평균 구하기
 let string = '5, 4, 10, 2, 5';
 let sum = 0;
-let count = 0;
 let arr = string.split(',');
 
 for (i = 0; i < arr.length; i++) {
     sum += parseInt(arr[i]);
-    count++;
 }
-console.log(sum / count);
+console.log(sum / arr.length);
+// for (let of arr) {
+//     sum += parseInt[i];
+// }
 
 
 //3번 arr의 각 자리수의 합 구하기
@@ -40,6 +41,43 @@ for (i = 0; i < str.length; i++) {
     sum += parseInt(str[i]);
 }
 console.log(sum);
+//arr.replace(/,/g, '')
 
 
-//4번 반복문만 사용하여 숫자단위 콤마 찍기
+// 콤마 찍기 1
+const n = 12345.6789;
+const comma = n.toString()
+  .replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
+
+document.writeln(comma);
+
+
+// 콤마 찍기 2
+navigator.language
+const n = 12345.6789;
+n.toLocaleString('ko-KR');
+
+
+// 콤마 찍기 3
+let n = 12345678;
+n += '';
+reverse = '';
+// 문자열 뒤집기
+for (let i = 0; i < n.length; i++) {
+  reverse = n[i] + reverse;
+}
+console.log(reverse);
+
+let sample = '';
+count = 0;
+for (let i = 0; i < reverse.length; ++i) {
+  if (count < 2){
+    sample += reverse[i];
+    ++count;
+  } else {
+    sample += reverse[i];
+    sample += ','
+    count = 0;
+  }
+}
+console.log(sample);
