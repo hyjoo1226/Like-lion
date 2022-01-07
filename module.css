@@ -1,0 +1,237 @@
+/* 지승 모듈css 시작 */
+body {
+  font-family: Spoqa Han Sans Neo;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0em;
+}
+
+.home-post {
+  position: relative;
+}
+
+.home-post .wrap-profile{
+  display: flex;
+}
+
+.home-post .wrap-profile .img-writer {
+  width: 42px;
+  height: 42px;
+  margin-right: 12px;
+}
+
+.home-post .wrap-profile .wrap-right {
+  padding-top: 4px;
+  height: 38px;
+  width: 304px;
+}
+
+.home-post .wrap-profile .wrap-right .user-name {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.home-post .wrap-profile .wrap-right .user-id {
+  font-size: 12px;
+  margin-top: 2px;
+  line-height: 14px;
+  color: #767676;
+}
+
+.home-post .wrap-profile .wrap-right .btn-more {
+  height: 17px;
+}
+
+.home-post .main-feed {
+  position: relative;
+  width: 304px;
+  margin-top: 16px;
+  margin-left: 54px;
+}
+
+.home-post .main-feed .txt-feed {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.home-post .main-feed .img-feed {
+  margin-top: 16px;
+  width: 304px;
+  height: 228px;
+  border-radius: 10px;
+  background:#C4C4C4;
+  border: 0.5px solid #DBDBDB;
+}
+
+.home-post .main-feed .wrap-reaction {
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 18px;
+}
+
+.home-post .main-feed .wrap-reaction li {
+  display: flex;
+  align-items: center;
+  height: 15px;
+}
+
+.home-post .main-feed .wrap-reaction li img {
+  width: 15px;
+  margin-right: 8px;
+}
+
+.home-post .main-feed .wrap-reaction li span {
+  color: #767676;
+  font-size: 12px;
+  margin-right: 18px;
+}
+
+.home-post .main-feed .txt-date {
+  font-size: 10px;
+  line-height: 12px;
+  color: #767676;
+}
+
+.product {
+  width: 140px;
+}
+
+.product .img-product {
+  width: 140px;
+  height: 90px;
+  border-radius: 8px;
+  background: #C4C4C4;
+  border: 0.5px solid #DBDBDB;
+}
+
+.product .tit-product {
+  margin-top: 6px;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.product .price-product {
+  margin-top: 4px;
+  color: #F26E22;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+/* 지승 모듈css 끝 */
+/* 현호 모듈css 시작 */
+.top-nav {
+  position: relative;
+  width: 390px;
+  height: 47.5px;
+  border-bottom: 0.5px solid #DBDBDB;
+}
+
+.top-nav .wrap-top-nav {
+  display: flex;
+}
+
+.top-nav .wrap-top-nav .btn-back {
+  margin: 13px 0 13px 16px;
+  width: 22px;
+  height: 22px;
+}
+
+.top-nav .wrap-top-nav .top-btn-more {
+  margin: 12px 12px 12px 319px;
+  width: 24px;
+  height: 24px;
+  background-color: white;
+  border: 0;
+}
+
+.top-nav .wrap-top-nav .top-search {
+  margin: 8px 19px 8px 23px;
+  padding: 7px 245px 7px 16px;
+  width: 55px;
+  height: 18px;
+  background-color: #F2F2F2;
+  border: 0;
+  border-radius: 32px;
+}
+
+.top-nav .wrap-top-nav .chat-partner {
+  font-size: 14px;
+  margin: 15px 170px 15px 10px;
+  width: 136px;
+  height: 18px;
+}
+
+.chat-btn-more {
+  position: absolute;
+  top: 12px;
+  left: 357px;
+  width: 24px;
+  height: 24px;
+  background-color: white;
+  border: 0;
+}
+
+.tab-menu {
+  position: relative;
+  padding: 12px 6px 6px 6px;
+  width: 378px;
+  height: 41px;
+  border-top: 0.5px solid #DBDBDB;
+  font-size: 10px;
+}
+
+.tab-menu .wrap-tab-menu {
+  display: flex;
+}
+
+.tab-icon {
+  width: 24px;
+  height: 24px;
+  padding: 0 33px 4px 33px;
+}
+
+.tab-text {
+  text-align: center;
+}
+
+.modal-alert {
+  position: relative;
+  width: 252px;
+  height: 88px;
+  font-weight: 500;
+  border-radius: 10px;
+}
+
+.modal-alert h1 {
+  display: none;
+}
+
+.modal-alert .wrap-modal-alert {
+  display: flex;
+}
+
+.modal-alert p {
+  padding-top: 22px;
+  height: 42px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.btn-modal {
+  width: 126px;
+  height: 46px;
+  font-size: 14px;
+  font-family: Spoqa Han Sans Neo;
+  background-color: white;
+  border: 0;
+  border-top: 0.5px solid #DBDBDB;
+}
+
+.btn-modal2 {
+  border-left: 0.5px solid #DBDBDB;
+  color: #F26E22;
+}
+/* 현호 모듈css 끝 */
